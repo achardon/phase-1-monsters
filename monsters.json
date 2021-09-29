@@ -6017,6 +6017,30 @@
       "age": "12",
       "description": "cool stuff",
       "id": 1003
+    },
+    {
+      "name": "Gila Monster",
+      "age": "30",
+      "description": "A real animal!",
+      "id": 1004
+    },
+    {
+      "name": "another monster example",
+      "age": "1000",
+      "description": "Can jump extra extra high",
+      "id": 1005
+    },
+    {
+      "name": "harakabu",
+      "age": "98",
+      "description": "acts like a chameleon",
+      "id": 1006
+    },
+    {
+      "name": "sally",
+      "age": "12",
+      "description": "amazing colors",
+      "id": 1007
     }
   ]
 }

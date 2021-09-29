@@ -1,9 +1,5 @@
 let counter = 1
-// while (counter < 2) {
-//     document.querySelector('#back').style.visibility = 'hidden'
-// }
-
-
+const form = document.querySelector('#createMonster')
 
 function getMonsters() {
     fetch(`http://localhost:3000/monsters/?_limit=50&_page=${counter}`)
@@ -42,9 +38,6 @@ document.querySelector('#back').addEventListener('click', () => {
     getMonsters()
 })
 
-getMonsters()
-
-const form = document.querySelector('#createMonster')
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     fetch('http://localhost:3000/monsters/', {
@@ -59,4 +52,8 @@ form.addEventListener('submit', (e) => {
         })
     })
     getMonsters()
+    form.reset()
+    document.querySelector('#name').focus()
 })
+
+getMonsters()
